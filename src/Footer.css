@@ -18,7 +18,7 @@
 }
 
 .footer-logo {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--accent);
@@ -88,5 +88,11 @@
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  .container {
+    max-width: min(1200px, 100%);
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 4vw, 2rem);
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { profile } from '../config';
-import './Contact.css';
+import '../Contact.css';
 
 const Contact: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { Theme } from '../hooks/Usetheme';
 import { profile } from '../config';
-import './Header.css';
+import '../Header.css';
 
 interface HeaderProps {
   theme: Theme;

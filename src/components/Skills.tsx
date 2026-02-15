@@ -1,6 +1,6 @@
 import React from 'react';
 import { skills } from '../config';
-import './Skills.css';
+import '../Skills.css';
 
 const Skills: React.FC = () => {
   return (

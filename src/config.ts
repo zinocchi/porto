@@ -1,8 +1,5 @@
-import { ProfileConfig, Project, Skill } from './types';
+import type { ProfileConfig, Project, Skill } from './hooks/Index';
 
-// ========================================
-// EDIT YOUR INFORMATION HERE
-// ========================================
 export const profile: ProfileConfig = {
   name: "Fikri Aziz Mudzakir",
   title: "Full Stack Developer",

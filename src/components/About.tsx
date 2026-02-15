@@ -1,6 +1,6 @@
 import React from 'react';
 import { profile } from '../config';
-import './About.css';
+import '../About.css';
 
 const About: React.FC = () => {
   return (

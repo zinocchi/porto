@@ -20,14 +20,13 @@
   --text-primary: #ffffff;
   --text-secondary: #d4d4d4;
   --text-tertiary: #a3a3a3;
-  --accent: #ffffff;
+  --accent: #ffffff;    
   --accent-hover: #e5e5e5;
   --border: rgba(255, 255, 255, 0.08);
   --shadow: rgba(0, 0, 0, 0.5);
   --gradient-start: #1a1a1a;
   --gradient-end: #000000;
 }
-
 * {
   margin: 0;
   padding: 0;

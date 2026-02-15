@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
       <div className="container">
         <div className="section-header">
           <span className="section-label">My work</span>
-          <h2 className="section-title">Featured Projects</h2>
+          <h2 className="section-title">Last Project</h2>
           <p className="section-description">
             A selection of projects that showcase my skills and passion for development
           </p>
@@ -17,8 +17,14 @@ const Projects: React.FC = () => {
         <div className="projects-grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
-              <div className="project-number">
-                {String(project.id).padStart(2, '0')}
+              <div className="project-image-wrapper">
+                <div className="project-number">
+                  {String(project.id).padStart(2, '0')}
+                </div>
+                <div className="project-image">
+                  <img src={project.image} alt={project.title} />
+                  <div className="project-image-overlay"></div>
+                </div>
               </div>
               
               <div className="project-content">
@@ -26,25 +32,22 @@ const Projects: React.FC = () => {
                 <p className="project-description">{project.description}</p>
                 
                 <div className="project-tech">
-                  {project.techStack.map((tech: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined, index: React.Key | null | undefined) => (
+                  {project.techStack.map((tech: any, index: any) => (
                     <span key={index} className="tech-tag">
                       {tech}
                     </span>
                   ))}
                 </div>
-              </div>
 
-              <a 
-                href={project.link} 
-                className="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>View Project</span>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </a>
+                <a 
+                  href={project.link} 
+                  className="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>View Project →</span>
+                </a>
+              </div>
 
               <div className="project-decoration"></div>
             </div>

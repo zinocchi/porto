@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="footer-content">
           <div className="footer-brand">
             <div className="footer-logo">
-              {profile.name.split(' ').map((word: any[]) => word[0]).join('')}
+              {/* {profile.name.split(' ').map((word: any[]) => word[0]).join('')} */}
             </div>
             <p className="footer-tagline">
               Building digital experiences with passion and precision

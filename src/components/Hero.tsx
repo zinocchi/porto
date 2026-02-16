@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
             <h1 className="hero-title fade-in-up stagger-1">{profile.name}</h1>
 
             <h2 className="hero-subtitle fade-in-up stagger-2">
-              Full Stack Software <span className="hero-accent">Developer</span>
+              Full Stack Web <span className="hero-accent">Developer</span>
             </h2>
 
             <p className="hero-description fade-in-up stagger-3">
